@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_advanced_project/core/helpers/extentions.dart';
+import 'package:flutter_advanced_project/core/routes/routes.dart';
 import 'package:flutter_advanced_project/core/theme/colors.dart';
 
 import '../../../../core/theme/styles.dart';
@@ -9,7 +11,9 @@ class GetRestartedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        context.navigateToReplacement(Routes.loginScreen);
+      },
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(ColorsManager.mainBlue),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,

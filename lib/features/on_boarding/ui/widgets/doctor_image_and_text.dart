@@ -7,8 +7,8 @@ class DoctorImageAndText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: Alignment.bottomCenter,
       children: [
+        Image.asset('assets/svg/Group.png'),
         Container(
           foregroundDecoration: BoxDecoration(
             gradient: LinearGradient(
@@ -23,9 +23,12 @@ class DoctorImageAndText extends StatelessWidget {
           child: Image.asset('assets/images/onboarding_doctor.png'),
         ),
         Positioned(
+          bottom: 0,
+          right: 0,
+          left: 0,
           child: Text(
             'Best Doctor\n Appointment App',
-            style: TextStyles.font32mainBlue700Wieght.copyWith(height: 1.4),
+            style: TextStyles.font32mainBlueBold.copyWith(height: 1.4),
             textAlign: TextAlign.center,
           ),
         ),

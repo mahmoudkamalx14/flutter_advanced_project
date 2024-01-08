@@ -12,4 +12,6 @@ extension Navigation on BuildContext {
   void navigateToAndRemoveUntil(String routeName) {
     Navigator.pushNamedAndRemoveUntil(this, routeName, (route) => false);
   }
+
+  void pop() => Navigator.pop(this);
 }
